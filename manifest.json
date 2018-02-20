@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "My First Add-on",
+    "version": "1.0",
+    
+    "description": "Simply adds a border around a webpage matching rahulanilkumar8.github.io.",
+    
+    "icons": {
+        "96": "icons/border-96.png"
+    },
+    
+    "content_scripts": [
+        {
+            "matches": ["*://culearn.carleton.ca/*"],
+            "js": ["borderify.js"]
+        }
+    ]
+}
